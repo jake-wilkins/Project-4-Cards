@@ -7,3 +7,12 @@
 */
 
 #include "Card.h"
+
+void Card::drawSelf()
+{
+	for (std::vector<Face>::iterator it = faceVector.begin() ; it != faceVector.end(); it++)
+	{
+		//for each face draw itself.
+		it->drawSelf();
+	}
+}
