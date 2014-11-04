@@ -59,9 +59,3 @@ Temporary Items
 *.cache
 *.manifest
 *.res
-*.dll
-*.ipch
-*.sdf
-*.sln
-*.opensdf
-*.suo
