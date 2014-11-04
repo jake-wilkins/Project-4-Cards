@@ -25,6 +25,7 @@
 class Deck{
 private:
 	std::vector<Card> deckVector;
+	bool faceUp;
 
 public:
 	void drawSelf();
