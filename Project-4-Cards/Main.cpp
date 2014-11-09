@@ -51,6 +51,11 @@ void init()
 	GLuint program = LoadShaders( shaders );
 	glUseProgram( program );
 
+	//sets the ID location for the uniform variable Abient in ambientLocation
+	//write this after you initialize "program"
+	GLint ambientLocation = glGetUniformLocation(program, "Ambient");
+	GLfloat ambientValue[4] = { 0.5, 0.5, 0.5, 1.0 };
+	glUniform4fv(ambientLocation, 1, ambientValue);
 	//alows you to use 2D textures
 	glEnable(GL_TEXTURE_2D);
 	

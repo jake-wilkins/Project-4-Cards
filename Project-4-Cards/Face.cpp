@@ -7,3 +7,9 @@
 */
 
 #include "Face.h"
+
+void Face::drawSelf()
+{
+
+
+}
